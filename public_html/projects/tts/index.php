@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/../../../vendor/autoload.php';
+$data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
+?>
 <!doctype html>
 <html lang="en">
 
@@ -8,17 +12,15 @@
     <link href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
 </head>
-
 <body>
     <div class="col-lg-8 mx-auto p-3 py-md-5">
         <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
             <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="32" viewBox="0 0 118 94"
-                    role="img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="32" viewBox="0 0 118 94" role="img">
                     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" class="me-2" style="enable-background:new 0 0 45 45;"
-                        xml:space="preserve" version="1.1" id="svg2">
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" class="me-2"
+                        style="enable-background:new 0 0 45 45;" xml:space="preserve" version="1.1" id="svg2">
                         <defs id="defs6">
                             <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
                                 <path id="path18" d="M 0,36 36,36 36,0 0,0 0,36 Z" />
@@ -98,12 +100,55 @@
 
         <main>
             <h1>TTS Engine Demo</h1>
-            <p class="fs-5 col-md-8"><i>Coming soon eh</i></p>
+            <p class="fs-5 col-md-8">See <a
+                    href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation"
+                    target="_blank">TTS investigation</a> on Meta for more information</p>
 
+            <div class="mb-4 mt-1">
+                <a href="https://github.com/theresnotime/tool-tnt-dev" target="_blank"
+                    class="btn btn-primary btn-lg px-4">GitHub Repo</a>
+            </div>
 
+            <hr class="col-3 col-md-2 mb-5">
+            <div class="table-responsive">
+                <table class="table align-middle text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="text-start">Word</th>
+                        <?php
+                        foreach($data['engines'] as $engine) {
+                            $name = $engine['name'];
+                            ?>
+                            <th><a href="<?= $engine['link']; ?>" target="_blank"><?= $name; ?></a></th>
+                            <?php
+                        }
+                        ?>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach($data['corpus'] as $word => $ipa) {
+                            ?>
+                            <tr>
+                                <td class="text-start"><?= $word; ?> (<code><?= $ipa; ?></code>)</td>
+                                <td>🔊</td>
+                                <td>🔊</td>
+                                <td>🔊</td>
+                                <td>🔊</td>
+                                <td>🔊</td>
+                                <td>🔊</td>
+                                <td>🔊</td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
         </main>
         <footer class="pt-5 my-5 text-muted border-top">
-            Made with 😈 by <a href="https://github.com/theresnotime/tool-tnt-dev/graphs/contributors" target="_blank">these people</a>
+            Made with 😈 by <a href="https://github.com/theresnotime/tool-tnt-dev/graphs/contributors"
+                target="_blank">these people</a>
         </footer>
     </div>
 
@@ -111,5 +156,4 @@
         crossorigin="anonymous">
     </script>
 </body>
-
 </html>

@@ -1,0 +1,84 @@
+{
+	"engines": {
+		"aws": {
+			"name": "Amazon AWS",
+			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Amazon_AWS",
+			"language": "en-us",
+			"dir": "static/audio/polly"
+		},
+		"espeak-ng": {
+			"name": "espeak-ng",
+			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#espeak-ng",
+			"language": "en-us",
+			"dir": "static/audio/polly"
+		},
+		"google": {
+			"name": "Google Cloud",
+			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Google_Cloud",
+			"language": "en-us",
+			"dir": "static/audio/polly"
+		},
+		"ibm": {
+			"name": "IBM Cloud",
+			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#IBM_Cloud",
+			"language": "en-us",
+			"dir": "static/audio/polly"
+		},
+		"larynx": {
+			"name": "larynx",
+			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#larynx",
+			"language": "en-us",
+			"dir": "static/audio/polly"
+		},
+		"microsoft": {
+			"name": "Microsoft Azure",
+			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Microsoft_Azure",
+			"language": "en-us",
+			"dir": "static/audio/polly"
+		},
+		"mespeak": {
+			"name": "phoneme-synthesis + meSpeak.js",
+			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#phoneme-synthesis_+_meSpeak.js",
+			"language": "en-us",
+			"dir": "static/audio/polly"
+		}
+		
+	},
+	"corpus": {
+		"Xochimilco": "sotʃiˈmilko",
+		"Tenochtitlan": "tenoːt͡ʃˈtit͡ɬan",
+		"Jhené Aiko": "dʒəˈneɪ ˈaɪkoʊ",
+		"Albuquerque": "ˈælbəˌkɜːrki",
+		"Hyderabad ": "ˈɦaɪ̯daraːbaːd",
+		"Hasan Minhaj": "ˈhʌsən ˈmɪnhɑː(d)ʒ",
+		"Parangaricutirimícuaro": "paɾanɡaɾikutiɾiˈmikwaɾo",
+		"anticonstitutionnellement": "/ɑ̃.ti.kɔ̃s.ti.ty.sjɔ.nɛl.mɑ̃/",
+		"Smørrebrød": "ˈsmɶɐ̯ˌpʁœðˀ",
+		"sudtle": "/ˈsʌt(ə)l/",
+		"Jewellry": "/ˈdʒuːəlɹi/",
+		"hamburger": "/ˈhæmbɝɡɚ/",
+		"Ibibio": "/ɪbɪˈbiːəʊ/",
+		"awful": "ˈɔːfɫ̩",
+		"fly": "flaɪ̯",
+		"catnip": "ˈkætⁿnɪp",
+		"apt": "ˈæp̚t",
+		"spotless": "ˈspɒtˡlɨs",
+		"peculiar": "pʰə̥ˈkj̊uːliɚ",
+		"confusion": "kənˈfjuːʒən",
+		"thing": "θɪŋ",
+		"key": "k̟ʰi",
+		"vin blanc": "vɛ̃ blɑ̃",
+		"wean": "ˈwɪən",
+		"llandudno": "ɬanˈdɨdnoː",
+		"नमस्ते (namaste)": "nə.məs.t̪eː",
+		"நன்றி (nanri)": "n̪anri",
+		"Montréal": "mɔ̃.ʁe.al",
+		"Louisville": "ˈlʊvɪl",
+		"Shibboleth": "ˈʃɪbəlɛθ",
+		"ευχαριστώ (efcharistó)": "ef.xa.ɾiˈsto",
+		"chocolate": "ˈt͡ʃɔk(ə)lɪt",
+		"sushi": "ˈsʊʃi",
+		"спасибо (spasibo)": "spɐˈsʲibə",
+		"supercalifragilisticexpialidocious": "suːpəˌkælɨˌfɹædʒɨˌlɪstɪkˌɛkspɪˌælɨˈdəʊʃəs"
+	}
+}
