@@ -127,7 +127,7 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                 <hr class="col-3 col-md-2 mb-3">
 
                 <h2>Results</h2>
-                <p class="fs-5 col-md-8">Work In Progress — none of those <i>do</i> anything yet, sorry! 😅</p>
+                <p class="fs-5 col-md-8">Work In Progress — columns will appear once the audio samples have completed</p>
 
                 <div class="table-responsive">
                     <table class="table align-middle text-center">
@@ -137,11 +137,14 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                                 <th class="text-start">Language</th>
                             <?php
                             foreach($data['engines'] as $engine) {
-                                $name = $engine['name'];
+                                if($engine['status'] > 0) {
+                                    $name = $engine['name'];
                             ?>
-                                <th data-engine="<?= $name; ?>" data-engine-dir="<?= $engine['dir']; ?>"><a
-                                        href="<?= $engine['link']; ?>" target="_blank"><?= $name; ?></a></th>
+                                <th data-engine="<?= $name; ?>" data-engine-dir="<?= $engine['dir']; ?>"
+                                    data-engine-status="<?= $engine['status']; ?>"><a href="<?= $engine['link']; ?>"
+                                        target="_blank"><?= $name; ?></a></th>
                             <?php
+                                }
                             }
                             ?>
                         </thead>
@@ -153,27 +156,17 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                                 data-lang="<?= $word['lang']; ?>" data-lang-iso="<?= $word['lang-iso']; ?>">
                                 <td class="text-start"><?= $word['word']; ?> (<code><?= $word['ipa']; ?></code>)</td>
                                 <td class="text-start"><?= $word['lang']; ?> (<code><?= $word['lang-iso']; ?></code>)</td>
-                                <td class="listen" title="Click to listen">
-                                    <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
-                                </td>
-                                <td class="listen" title="Click to listen">
-                                    <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
-                                </td>
-                                <td class="listen" title="Click to listen">
-                                    <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
-                                </td>
-                                <td class="listen" title="Click to listen">
-                                    <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
-                                </td>
-                                <td class="listen" title="Click to listen">
-                                    <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
-                                </td>
-                                <td class="listen" title="Click to listen">
-                                    <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
-                                </td>
-                                <td class="listen" title="Click to listen">
-                                    <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
-                                </td>
+                                <?php
+                                foreach($data['engines'] as $engine) {
+                                    if($engine['status'] > 0) {
+                                ?>
+                                    <td class="listen" title="Click to listen">
+                                        <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
+                                    </td>
+                                <?php
+                                    }
+                                }
+                                ?>
                             </tr>
                             <?php
                             }

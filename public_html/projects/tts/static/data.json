@@ -3,37 +3,44 @@
 		"aws": {
 			"name": "Amazon AWS",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Amazon_AWS",
-			"dir": "static/audio/polly"
+			"dir": "static/audio/polly",
+			"status": 1
 		},
 		"espeak-ng": {
 			"name": "espeak-ng",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#espeak-ng",
-			"dir": "static/audio/espeak-ng"
+			"dir": "static/audio/espeak-ng",
+			"status": 0
 		},
 		"google": {
 			"name": "Google Cloud",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Google_Cloud",
-			"dir": "static/audio/google"
+			"dir": "static/audio/google",
+			"status": 0
 		},
 		"ibm": {
 			"name": "IBM Cloud",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#IBM_Cloud",
-			"dir": "static/audio/ibm"
+			"dir": "static/audio/ibm",
+			"status": 0
 		},
 		"larynx": {
 			"name": "larynx",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#larynx",
-			"dir": "static/audio/larynx"
+			"dir": "static/audio/larynx",
+			"status": 0
 		},
 		"microsoft": {
 			"name": "Microsoft Azure",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Microsoft_Azure",
-			"dir": "static/audio/microsoft"
+			"dir": "static/audio/microsoft",
+			"status": 2
 		},
 		"mespeak": {
 			"name": "meSpeak.js",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#phoneme-synthesis_+_meSpeak.js",
-			"dir": "static/audio/mespeak"
+			"dir": "static/audio/mespeak",
+			"status": 0
 		}
 
 	},
@@ -42,79 +49,79 @@
 			"word": "Xochimilco",
 			"ipa": "sotʃiˈmilko",
 			"lang": "Nahuatl",
-			"lang-iso": "nah"
+			"lang-iso": "es-MX"
 		},
 		"Tenochtitlan": {
 			"word": "Tenochtitlan",
 			"ipa": "tenoːt͡ʃˈtit͡ɬan",
 			"lang": "Nahuatl",
-			"lang-iso": "nah"
+			"lang-iso": "es-MX"
 		},
 		"Jhené Aiko": {
 			"word": "Jhené Aiko",
 			"ipa": "dʒəˈneɪ ˈaɪkoʊ",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Albuquerque": {
 			"word": "Albuquerque",
 			"ipa": "ˈælbəˌkɜːrki",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Hyderabad": {
 			"word": "Hyderabad",
 			"ipa": "ˈɦaɪ̯daraːbaːd",
 			"lang": "Telegu",
-			"lang-iso": "te"
+			"lang-iso": "en-IN"
 		},
 		"Hasan Minhaj": {
 			"word": "Hasan Minhaj",
 			"ipa": "ˈhʌsən ˈmɪnhɑː(d)ʒ",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Parangaricutirimícuaro": {
 			"word": "Parangaricutirimícuaro",
 			"ipa": "paɾanɡaɾikutiɾiˈmikwaɾo",
 			"lang": "Spanish",
-			"lang-iso": "es"
+			"lang-iso": "es-ES"
 		},
 		"México": {
 			"word": "México",
 			"ipa": "mexiko",
 			"lang": "Spanish",
-			"lang-iso": "es"
+			"lang-iso": "es-ES"
 		},
 		"anticonstitutionnellement": {
 			"word": "anticonstitutionnellement",
 			"ipa": "ɑ̃.ti.kɔ̃s.ti.ty.sjɔ.nɛl.mɑ̃",
 			"lang": "French",
-			"lang-iso": "fr"
+			"lang-iso": "fr-FR"
 		},
 		"Smørrebrød": {
 			"word": "Smørrebrød",
 			"ipa": "ˈsmɶɐ̯ˌpʁœðˀ",
 			"lang": "Norwegian",
-			"lang-iso": "no"
+			"lang-iso": "is-IS"
 		},
 		"sudtle": {
 			"word": "sudtle",
 			"ipa": "ˈsʌt(ə)l",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Jewellry": {
 			"word": "Jewellry",
 			"ipa": "ˈdʒuːəlɹi",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"hamburger": {
 			"word": "hamburger",
 			"ipa": "ˈhæmbɝɡɚ",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Ibibio": {
 			"word": "Ibibio",
@@ -126,61 +133,61 @@
 			"word": "awful",
 			"ipa": "ˈɔːfɫ̩",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"fly": {
 			"word": "fly",
 			"ipa": "flaɪ̯",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"catnip": {
 			"word": "catnip",
 			"ipa": "ˈkætⁿnɪp",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"apt": {
 			"word": "apt",
 			"ipa": "ˈæp̚t",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"spotless": {
 			"word": "spotless",
 			"ipa": "ˈspɒtˡlɨs",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"peculiar": {
 			"word": "peculiar",
 			"ipa": "pʰə̥ˈkj̊uːliɚ",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"confusion": {
 			"word": "confusion",
 			"ipa": "kənˈfjuːʒən",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"thing": {
 			"word": "thing",
 			"ipa": "θɪŋ",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"key": {
 			"word": "key",
 			"ipa": "k̟ʰi",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"vin blanc": {
 			"word": "vin blanc",
 			"ipa": "vɛ̃ blɑ̃",
 			"lang": "French",
-			"lang-iso": "fr"
+			"lang-iso": "fr-FR"
 		},
 		"wean": {
 			"word": "wean",
@@ -192,13 +199,13 @@
 			"word": "llandudno",
 			"ipa": "ɬanˈdɨdnoː",
 			"lang": "Welsh",
-			"lang-iso": "cy"
+			"lang-iso": "cy-GB"
 		},
 		"नमस्ते": {
 			"word": "नमस्ते",
 			"ipa": "nə.məs.t̪eː",
 			"lang": "Hindi",
-			"lang-iso": "hin"
+			"lang-iso": "hi-IN"
 		},
 		"நன்றி": {
 			"word": "நன்றி",
@@ -210,19 +217,19 @@
 			"word": "Montréal",
 			"ipa": "mɔ̃.ʁe.al",
 			"lang": "French",
-			"lang-iso": "fr"
+			"lang-iso": "fr-FR"
 		},
 		"Louisville": {
 			"word": "Louisville",
 			"ipa": "ˈlʊvɪl",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Shibboleth": {
 			"word": "Shibboleth",
 			"ipa": "ˈʃɪbəlɛθ",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"ευχαριστώ": {
 			"word": "ευχαριστώ",
@@ -234,55 +241,55 @@
 			"word": "chocolate",
 			"ipa": "ˈt͡ʃɔk(ə)lɪt",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"sushi": {
 			"word": "sushi",
 			"ipa": "ˈsʊʃi",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"спасибо": {
 			"word": "спасибо",
 			"ipa": "spɐˈsʲibə",
 			"lang": "Russian",
-			"lang-iso": "ru"
+			"lang-iso": "ru-RU"
 		},
 		"supercalifragilisticexpialidocious": {
 			"word": "supercalifragilisticexpialidocious",
 			"ipa": "suːpəˌkælɨˌfɹædʒɨˌlɪstɪkˌɛkspɪˌælɨˈdəʊʃəs",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Cornwall": {
 			"word": "Cornwall",
 			"ipa": "ˈkɔːrnwɔːl",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Thames": {
 			"word": "Thames",
 			"ipa": "tɛmz",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Gunwalloe": {
 			"word": "Gunwalloe",
 			"ipa": "gʌnˈwɒləʊ",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Porthleven": {
 			"word": "Porthleven",
 			"ipa": "ˌpɔːrθˈlɛvən",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		},
 		"Somerset": {
 			"word": "Somerset",
 			"ipa": "ˈsʌmərsɛt",
 			"lang": "English",
-			"lang-iso": "en"
+			"lang-iso": "en-US"
 		}
 	}
 }
