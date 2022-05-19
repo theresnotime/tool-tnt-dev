@@ -109,7 +109,16 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                     class="btn btn-primary btn-lg px-4">GitHub Repo</a>
             </div>
 
-            <hr class="col-3 col-md-2 mb-5">
+            <hr class="col-3 col-md-2 mb-3">
+
+            <h2>Corpus</h2>
+            <p class="fs-5 col-md-8">A {x} word <a href="static/data.json" target="_blank">corpus</a> was chosen by the <a href="https://meta.wikimedia.org/wiki/Community_Tech" target="_blank">Community Tech team</a> to test the TTS engines against.</p>
+
+            <hr class="col-3 col-md-2 mb-3">
+
+            <h2>Results</h2>
+            <p class="fs-5 col-md-8">Work In Progress — none of those <i>do</i> anything yet, sorry! 😅</p>
+
             <div class="table-responsive">
                 <table class="table align-middle text-center">
                     <thead class="table-light">
