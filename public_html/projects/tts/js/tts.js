@@ -1,24 +1,21 @@
 /*jshint esversion: 6 */
-$( document ).ready(function() {
-    $('td.listen').each(function() {
-        let col = $(this).prevAll().length;
-        let row = $(this).closest('tr');
-        let headerObj = $(this).parents('table').find('th').eq(col);
+$( document ).ready( function() {
+    $( 'td.listen' ).each( function() {
+        let headerObj = getTableHeader( $( this ) );
+
         if(headerObj.data().engineStatus == 1) {
-            console.log($(this).find('img'));
-            $(this).attr('title', 'Click to listen');
-            $(this).find('img').attr('src', 'static/img/Audio_Green.png');
-        } else if(headerObj.data().engineStatus == 2) {
-            $(this).attr('title', 'File may be missing');
-            $(this).find('img').attr('src', 'static/img/Audio_Amber.png');
+            $( this ).attr( 'title', 'Click to listen' );
+            $( this ).find( 'img' ).attr( 'src', 'static/img/Audio_Green.png' );
+        } else if( headerObj.data().engineStatus == 2 ) {
+            $( this ).attr( 'title', 'File may be missing' );
+            $( this ).find( 'img' ).attr( 'src', 'static/img/Audio_Amber.png' );
         } else {
-            $(this).find('img').attr('src', 'static/img/Audio_Red.png');
+            $( this ).find( 'img' ).attr( 'src', 'static/img/Audio_Red.png' );
         }
     });
-    $('td.listen').click(function () {
-        let col = $(this).prevAll().length;
-        let row = $(this).closest('tr');
-        let headerObj = $(this).parents('table').find('th').eq(col);
+    $( 'td.listen' ).click( function () {
+        let row = $( this ).closest( 'tr' );
+        let headerObj = getTableHeader( $( this ) );
         playAudio(
             getAudioURI(
                 row.data(),
@@ -27,15 +24,24 @@ $( document ).ready(function() {
         );
     });
 
-    function getAudioURI(row, header) {
-        console.debug('Clicked on word "' + row.word + '" for engine "' + header.engine + '"');
+    function getTableHeader( td ) {
+        let col = $( td ).prevAll().length;
+        return $( td ).parents( 'table' ).find( 'th' ).eq( col );
+    }
+
+    function getAudioURI( row, header ) {
         let audioURI = header.engineDir + '/' + row.word + '.mp3';
-        console.debug('Getting audio from ' + audioURI);
         return audioURI;
     }
 
-    function playAudio(audioURI) {
-        let sound = new Howl({src: [audioURI]});
+    function playAudio( audioURI ) {
+        let sound = new Howl(
+            {
+                src: [
+                    audioURI
+                ]
+            }
+        );
         sound.play();
     }
 });
