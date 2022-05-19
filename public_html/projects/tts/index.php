@@ -13,7 +13,6 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
         crossorigin="anonymous">
     <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/howler/2.2.3/howler.min.js"></script>
-    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/aws-sdk/2.1138.0/aws-sdk.min.js"></script>
     <script src="js/tts.js"></script>
     <style>
         .listen-icon {
