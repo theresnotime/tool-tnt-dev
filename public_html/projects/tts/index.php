@@ -124,6 +124,7 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                     <thead class="table-light">
                         <tr>
                             <th class="text-start">Word</th>
+                            <th class="text-start">Language</th>
                         <?php
                         foreach($data['engines'] as $engine) {
                             $name = $engine['name'];
@@ -136,10 +137,11 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                     </thead>
                     <tbody>
                         <?php
-                        foreach($data['corpus'] as $word => $ipa) {
+                        foreach($data['corpus'] as $word) {
                             ?>
                             <tr>
-                                <td class="text-start"><?= $word; ?> (<code><?= $ipa; ?></code>)</td>
+                                <td class="text-start"><?= $word['word']; ?> (<code><?= $word['ipa']; ?></code>)</td>
+                                <td class="text-start"><?= $word['lang']; ?> (<code><?= $word['lang-iso']; ?></code>)</td>
                                 <td>🔊</td>
                                 <td>🔊</td>
                                 <td>🔊</td>
