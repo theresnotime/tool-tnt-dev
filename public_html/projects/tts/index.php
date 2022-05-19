@@ -19,8 +19,8 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="32" viewBox="0 0 118 94" role="img">
                     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" class="me-2"
-                        style="enable-background:new 0 0 45 45;" xml:space="preserve" version="1.1" id="svg2">
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" class="me-2" style="enable-background:new 0 0 45 45;"
+                        xml:space="preserve" version="1.1" id="svg2">
                         <defs id="defs6">
                             <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
                                 <path id="path18" d="M 0,36 36,36 36,0 0,0 0,36 Z" />
