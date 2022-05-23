@@ -28,7 +28,7 @@
 			"name": "larynx",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#larynx",
 			"dir": "static/audio/larynx",
-			"status": 0
+			"status": 1
 		},
 		"microsoft": {
 			"name": "Microsoft Azure",
