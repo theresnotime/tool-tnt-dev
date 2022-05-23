@@ -128,6 +128,12 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                 <h2>Results</h2>
                 <p class="fs-5 col-md-8">Work In Progress — columns will appear once the audio samples have completed</p>
 
+                <h3>Known issues</h3>
+                <ul>
+                    <li>Some of Azure's outputs are missing, as it didn't recognise some of the IPA unicode</li>
+                    <li>larynx's output needs significant tweaking to make it useful (i.e. some of the outputs below sound <i>nothing</i> like they should, mainly due to the use of IPA it doesn't understand.</li>
+                </ul>
+
                 <div class="table-responsive">
                     <table class="table align-middle text-center">
                         <thead class="table-light">
