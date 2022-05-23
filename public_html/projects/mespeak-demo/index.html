@@ -621,6 +621,9 @@
                 $('#download-button').click(function () {
                     download_file();
                 });
+                $('#copy-link-button').click(function () {
+                    copy_link_button();
+                });
 
                 var urlParams = new URLSearchParams(window.location.search);
                 console.log(urlParams);
@@ -657,7 +660,7 @@
                 <input id="ipa-input" type="text" placeholder="IPA">
                 <input id="submit" type="button" value="pronounce">
                 <input id="download-button" type="button" value="download pronunciation">
-                <input id="copy-link-button" onclick="copy_link_button(); return false;" type="button"
+                <input id="copy-link-button" type="button"
                     value="copy share url">
             </form>
         </div>
