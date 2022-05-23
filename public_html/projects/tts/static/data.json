@@ -40,7 +40,7 @@
 			"name": "meSpeak.js",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#phoneme-synthesis_+_meSpeak.js",
 			"dir": "static/audio/mespeak",
-			"status": 0
+			"status": 1
 		}
 
 	},
