@@ -139,7 +139,7 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                                 if($engine['status'] > 0) {
                                     $name = $engine['name'];
                             ?>
-                                <th data-engine="<?= $name; ?>" data-engine-dir="<?= $engine['dir']; ?>"
+                                <th data-engine="<?= $name; ?>" data-ext="<?= $engine['ext']; ?>" data-engine-dir="<?= $engine['dir']; ?>"
                                     data-engine-status="<?= $engine['status']; ?>"><a href="<?= $engine['link']; ?>"
                                         target="_blank"><?= $name; ?></a></th>
                             <?php

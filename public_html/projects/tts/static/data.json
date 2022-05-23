@@ -4,42 +4,49 @@
 			"name": "Amazon AWS",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Amazon_AWS",
 			"dir": "static/audio/polly",
+			"ext": "mp3",
 			"status": 1
 		},
 		"espeak-ng": {
 			"name": "espeak-ng",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#espeak-ng",
 			"dir": "static/audio/espeak-ng",
+			"ext": "mp3",
 			"status": 0
 		},
 		"google": {
 			"name": "Google Cloud",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Google_Cloud",
 			"dir": "static/audio/google",
+			"ext": "mp3",
 			"status": 1
 		},
 		"ibm": {
 			"name": "IBM Cloud",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#IBM_Cloud",
 			"dir": "static/audio/ibm",
+			"ext": "mp3",
 			"status": 0
 		},
 		"larynx": {
 			"name": "larynx",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#larynx",
 			"dir": "static/audio/larynx",
+			"ext": "mp3",
 			"status": 1
 		},
 		"microsoft": {
 			"name": "Microsoft Azure",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Microsoft_Azure",
 			"dir": "static/audio/microsoft",
+			"ext": "mp3",
 			"status": 2
 		},
 		"mespeak": {
 			"name": "meSpeak.js",
 			"link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#phoneme-synthesis_+_meSpeak.js",
 			"dir": "static/audio/mespeak",
+			"ext": "wav",
 			"status": 1
 		}
 

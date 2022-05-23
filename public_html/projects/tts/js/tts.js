@@ -30,7 +30,7 @@ $( document ).ready( function() {
     }
 
     function getAudioURI( row, header ) {
-        let audioURI = header.engineDir + '/' + row.word + '.mp3';
+        let audioURI = header.engineDir + '/' + row.word + '.' + header.ext;
         return audioURI;
     }
 
