@@ -182,7 +182,7 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                 </div>
             </main>
             <footer class="pt-5 my-5 text-muted border-top">
-                <p>Made with 😈 by <a href="https://github.com/theresnotime/tool-tnt-dev/graphs/contributors"
+                <p>Made with ❤ by <a href="https://github.com/theresnotime/tool-tnt-dev/graphs/contributors"
                         target="_blank">these people</a></p>
                 <p>
                     <strong>Attribution</strong><br>
