@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../../../vendor/autoload.php';
-$data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
+require_once __DIR__ . "/../../../vendor/autoload.php";
+$data = json_decode(file_get_contents(__DIR__ . "/static/data.json"), true);
 ?>
 <!doctype html>
 <html lang="en">
@@ -121,7 +121,9 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                 <hr class="col-3 col-md-2 mb-3">
 
                 <h2>Corpus</h2>
-                <p class="fs-5 col-md-8">A <a href="static/data.json" target="_blank"><?= count($data['corpus']); ?> word corpus</a> was chosen by the <a href="https://meta.wikimedia.org/wiki/Community_Tech" target="_blank">Community Tech team</a> to test the TTS engines against.</p>
+                <p class="fs-5 col-md-8">A <a href="static/data.json" target="_blank"><?= count(
+                    $data["corpus"]
+                ) ?> word corpus</a> was chosen by the <a href="https://meta.wikimedia.org/wiki/Community_Tech" target="_blank">Community Tech team</a> to test the TTS engines against.</p>
 
                 <hr class="col-3 col-md-2 mb-3">
 
@@ -141,42 +143,45 @@ $data = json_decode(file_get_contents(__DIR__ . '/static/data.json'), true);
                             <tr>
                                 <th class="text-start">Word</th>
                                 <th class="text-start">Language</th>
-                            <?php
-                            foreach($data['engines'] as $engine) {
-                                if($engine['status'] > 0) {
-                                    $name = $engine['name'];
-                            ?>
-                                <th data-engine="<?= $name; ?>" data-ext="<?= $engine['ext']; ?>" data-engine-dir="<?= $engine['dir']; ?>"
-                                    data-engine-status="<?= $engine['status']; ?>"><a href="<?= $engine['link']; ?>"
-                                        target="_blank"><?= $name; ?></a></th>
+                            <?php foreach ($data["engines"] as $engine) {
+                                if ($engine["status"] > 0) {
+                                    $name = $engine["name"]; ?>
+                                <th data-engine="<?= $name ?>" data-ext="<?= $engine[
+    "ext"
+] ?>" data-engine-dir="<?= $engine["dir"] ?>"
+                                    data-engine-status="<?= $engine[
+                                        "status"
+                                    ] ?>"><a href="<?= $engine["link"] ?>"
+                                        target="_blank"><?= $name ?></a></th>
                             <?php
                                 }
-                            }
-                            ?>
+                            } ?>
                         </thead>
                         <tbody>
-                            <?php
-                            foreach($data['corpus'] as $word) {
-                            ?>
-                            <tr id="<?= $word['word']; ?>" data-word="<?= $word['word']; ?>" data-ipa="<?= $word['ipa']; ?>"
-                                data-lang="<?= $word['lang']; ?>" data-lang-iso="<?= $word['lang-iso']; ?>">
-                                <td class="text-start"><?= $word['word']; ?> (<code><?= $word['ipa']; ?></code>)</td>
-                                <td class="text-start"><?= $word['lang']; ?> (<code><?= $word['lang-iso']; ?></code>)</td>
-                                <?php
-                                foreach($data['engines'] as $engine) {
-                                    if($engine['status'] > 0) {
-                                ?>
+                            <?php foreach ($data["corpus"] as $word) { ?>
+                            <tr id="<?= $word["word"] ?>" data-word="<?= $word[
+    "word"
+] ?>" data-ipa="<?= $word["ipa"] ?>"
+                                data-lang="<?= $word[
+                                    "lang"
+                                ] ?>" data-lang-iso="<?= $word["lang-iso"] ?>">
+                                <td class="text-start"><?= $word[
+                                    "word"
+                                ] ?> (<code><?= $word["ipa"] ?></code>)</td>
+                                <td class="text-start"><?= $word[
+                                    "lang"
+                                ] ?> (<code><?= $word[
+     "lang-iso"
+ ] ?></code>)</td>
+                                <?php foreach ($data["engines"] as $engine) {
+                                    if ($engine["status"] > 0) { ?>
                                     <td class="listen" title="Click to listen">
                                         <img class="listen-icon" src="static/img/Audio_(CoreUI_Icons_v1.0.0).svg.png" alt="Audio icon"/>
                                     </td>
-                                <?php
-                                    }
-                                }
-                                ?>
+                                <?php }
+                                } ?>
                             </tr>
-                            <?php
-                            }
-                            ?>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
