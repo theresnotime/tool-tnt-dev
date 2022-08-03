@@ -203,7 +203,7 @@ $data = json_decode(file_get_contents(__DIR__ . "/static/data.json"), true);
                                     data-engine-status="1"><a
                                         href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Google_Cloud"
                                         target="_blank">Google Cloud</a></th>
-                                <th data-engine="larynx" data-ext="mp3" data-engine-dir="static/audio/larynx"
+                                <th data-engine="larynx" data-ext="wav" data-engine-dir="static/audio/larynx"
                                     data-engine-status="1"><a
                                         href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#larynx"
                                         target="_blank">larynx</a></th>
