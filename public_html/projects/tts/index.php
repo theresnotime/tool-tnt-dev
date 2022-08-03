@@ -120,22 +120,27 @@ $data = json_decode(file_get_contents(__DIR__ . "/static/data.json"), true);
 
                 <hr class="col-3 col-md-2 mb-3">
 
-                <h2>Corpus</h2>
+                <h2 id="corpus">Corpus</h2>
                 <p class="fs-5 col-md-8">A <a href="static/data.json" target="_blank"><?= count(
                     $data["corpus"]
                 ) ?> word corpus</a> was chosen by the <a href="https://meta.wikimedia.org/wiki/Community_Tech" target="_blank">Community Tech team</a> to test the TTS engines against.</p>
 
                 <hr class="col-3 col-md-2 mb-3">
 
-                <h2>Results</h2>
+                <h2 id="results">Results</h2>
                 <p class="fs-5 col-md-8">Work In Progress — columns will appear once the audio samples have completed</p>
 
                 <h3>Known issues</h3>
                 <ul>
                     <li>Some of Azure's outputs are missing, as it didn't recognise some of the IPA unicode</li>
-                    <li>larynx's output needs significant tweaking to make it useful (i.e. some of the outputs below sound <i>nothing</i> like they should, mainly due to the use of IPA it doesn't understand.)</li>
+                    <li>Larynx's output needs significant tweaking to make it useful (i.e. some of the outputs below sound <i>nothing</i> like they should.) — see below.</li>
                     <li>meSpeak.js and espeak-ng use the same voices/TTS synthesis engine.</li>
                 </ul>
+
+                <h3>Unicode issues</h3>
+                <p>A lot of the rendering faults below (especially for Larynx and Azure) are caused by the incorrect IPA
+                    unicode characters being used<sup>(<a href="https://phabricator.wikimedia.org/T313711#8105543"
+                        target="_blank">T313711</a>)</sup></p>
 
                 <div class="table-responsive">
                     <table class="table align-middle text-center">
@@ -184,13 +189,64 @@ $data = json_decode(file_get_contents(__DIR__ . "/static/data.json"), true);
                             <?php } ?>
                         </tbody>
                     </table>
+                    <h2 id="misc">Misc word(s)</h2>
+                    <table class="table align-middle text-center">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="text-start">Word</th>
+                                <th class="text-start">Language</th>
+                                <th data-engine="Amazon AWS" data-ext="mp3" data-engine-dir="static/audio/polly"
+                                    data-engine-status="1"><a
+                                        href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Amazon_AWS"
+                                        target="_blank">Amazon AWS</a></th>
+                                <th data-engine="Google Cloud" data-ext="wav" data-engine-dir="static/audio/google"
+                                    data-engine-status="1"><a
+                                        href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Google_Cloud"
+                                        target="_blank">Google Cloud</a></th>
+                                <th data-engine="larynx" data-ext="mp3" data-engine-dir="static/audio/larynx"
+                                    data-engine-status="1"><a
+                                        href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#larynx"
+                                        target="_blank">larynx</a></th>
+                                <th data-engine="Microsoft Azure" data-ext="mp3"
+                                    data-engine-dir="static/audio/microsoft" data-engine-status="2"><a
+                                        href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#Microsoft_Azure"
+                                        target="_blank">Microsoft Azure</a></th>
+                                <th data-engine="meSpeak.js" data-ext="wav" data-engine-dir="static/audio/mespeak"
+                                    data-engine-status="1"><a
+                                        href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#phoneme-synthesis_+_meSpeak.js"
+                                        target="_blank">meSpeak.js</a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="Cherek" data-word="Cherek" data-ipa="ˈtʃɛrɪk" data-lang="Nahuatl"
+                                data-lang-iso="en-US">
+                                <td class="text-start">Cherek (<code>ˈtʃɛrɪk</code>)</td>
+                                <td class="text-start">English? (<code>en-US</code>)</td>
+                                <td class="" title="Click to listen">
+                                    <img class="listen-icon" src="static/img/Audio_Red.png" alt="Audio icon">
+                                </td>
+                                <td class="listen" title="Click to listen">
+                                    <img class="listen-icon" src="static/img/Audio_Red.png" alt="Audio icon">
+                                </td>
+                                <td class="" title="Click to listen">
+                                    <img class="listen-icon" src="static/img/Audio_Red.png" alt="Audio icon">
+                                </td>
+                                <td class="" title="File may be missing">
+                                    <img class="listen-icon" src="static/img/Audio_Red.png" alt="Audio icon">
+                                </td>
+                                <td class="" title="Click to listen">
+                                    <img class="listen-icon" src="static/img/Audio_Red.png" alt="Audio icon">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </main>
             <footer class="pt-5 my-5 text-muted border-top">
                 <p>Made with ❤ by <a href="https://github.com/theresnotime/tool-tnt-dev/graphs/contributors"
-                        target="_blank">these people</a></p>
+                        target="_blank">these people</a>.</p>
                 <p>
-                    <strong>Attribution</strong><br>
+                    <strong>Attributions</strong><br>
                     <a href="https://commons.wikimedia.org/wiki/File:Audio_(CoreUI_Icons_v1.0.0).svg">CoreUI</a>, <a
                         href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons
                 </p>
