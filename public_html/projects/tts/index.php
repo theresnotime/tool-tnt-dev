@@ -228,7 +228,7 @@ $data = json_decode(file_get_contents(__DIR__ . "/static/data.json"), true);
                                 <td class="listen" title="Click to listen">
                                     <img class="listen-icon" src="static/img/Audio_Red.png" alt="Audio icon">
                                 </td>
-                                <td class="" title="Click to listen">
+                                <td class="listen" title="Click to listen">
                                     <img class="listen-icon" src="static/img/Audio_Red.png" alt="Audio icon">
                                 </td>
                                 <td class="" title="File may be missing">
