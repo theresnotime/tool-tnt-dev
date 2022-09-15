@@ -15,7 +15,7 @@
     },
     "homepage": "https://github.com/theresnotime/tool-tnt-dev#readme",
     "devDependencies": {
-        "@prettier/plugin-php": "^0.18.9",
+        "@prettier/plugin-php": "^0.19.1",
         "prettier": "^2.7.1"
     }
 }
