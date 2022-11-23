@@ -1,0 +1,3 @@
+[build]
+  publish = "../public_html/devlog"
+  command = "npm run build"

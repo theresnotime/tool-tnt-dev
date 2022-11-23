@@ -1,0 +1,23 @@
+{
+  "name": "tool-tnt-dev-devlog",
+  "version": "1.0.0",
+  "description": "A little log of dev stuff.",
+  "scripts": {
+    "build": "npx @11ty/eleventy --output=../public_html/devlog",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy --output=../public_html/devlog",
+    "watch": "npx @11ty/eleventy --output=../public_html/devlog --watch",
+    "serve": "npx @11ty/eleventy --output=../public_html/devlog --serve",
+    "start": "npx @11ty/eleventy --output=../public_html/devlog --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy --output=../public_html/devlog"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-navigation": "^0.3.3",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "luxon": "^2.4.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.4"
+  }
+}

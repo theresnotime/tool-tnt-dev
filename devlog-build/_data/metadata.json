@@ -1,0 +1,21 @@
+{
+  "title": "TheresNoTime's Devlog",
+  "url": "https://tnt-dev.toolforge.org/devlog",
+  "language": "en",
+  "description": "A little log of dev stuff.",
+  "feed": {
+    "subtitle": "A little log of dev stuff.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://tnt-dev.toolforge.org/devlog"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://tnt-dev.toolforge.org/devlog/feed/feed.json"
+  },
+  "author": {
+    "name": "Sammy",
+    "email": "sam@theresnotime.co.uk",
+    "url": "https://www.theresnotime.co.uk"
+  }
+}

@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "This is a quick and messy tool account for hosting ideas.",
     "scripts": {
-        "test": "npx prettier -c ."
+        "test": "npx prettier -c public_html/projects"
     },
     "repository": {
         "type": "git",
