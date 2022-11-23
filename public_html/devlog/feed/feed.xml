@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>TheresNoTime&#39;s Devlog</title>
+	<subtitle>A little log of dev stuff.</subtitle>
+	
+	<link href="https://tnt-dev.toolforge.org/feed/feed.xml" rel="self"/>
+	<link href="https://tnt-dev.toolforge.org/devlog"/>
+	<updated>2022-11-23T00:00:00Z</updated>
+	<id>https://tnt-dev.toolforge.org/devlog</id>
+	<author>
+		<name>Sammy</name>
+		<email>sam@theresnotime.co.uk</email>
+	</author>
+	
+	<entry>
+		<title>Hello World</title>
+		<link href="https://tnt-dev.toolforge.org/posts/2022/Hello%20World/"/>
+		<updated>2022-11-23T00:00:00Z</updated>
+		<id>https://tnt-dev.toolforge.org/posts/2022/Hello%20World/</id>
+		<content type="html">&lt;p&gt;In the spirit of trying to increase transparency into what Wikimedia Foundation software engineers get up to on a daily basis (or at least, what &lt;a href=&quot;https://meta.wikimedia.org/wiki/User:TheresNoTime-WMF&quot;&gt;a single member&lt;/a&gt; of the &lt;a href=&quot;https://meta.wikimedia.org/wiki/Community_Tech&quot;&gt;Community Tech team&lt;/a&gt; gets up to!), I&#39;m going to try to write a blog post every week.&lt;/p&gt;
+&lt;p&gt;I&#39;m not sure how long I&#39;ll be able to keep this up, as normally any sort of blog project falls flat on its face after about a month, but I&#39;m going to give it a go! I&#39;m going to let my team know as a bit of accountability.&lt;/p&gt;
+&lt;h2 id=&quot;eleventy-what&quot; tabindex=&quot;-1&quot;&gt;Eleventy—&lt;em&gt;what?&lt;/em&gt; &lt;a class=&quot;direct-link&quot; href=&quot;https://tnt-dev.toolforge.org/posts/2022/Hello%20World/#eleventy-what&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A nice interesting (side)topic for this blog is going to be the fact that it&#39;s going to be built using &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt;, a static site generator. Normally I&#39;d use something like &lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt; or &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; for this sort of thing, but I&#39;ve been wanting to try out Eleventy for a while now, and this seems like a good opportunity to do so — plus learning a whole new tool is &lt;em&gt;always fun!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-been-working-on-today&quot; tabindex=&quot;-1&quot;&gt;&lt;s&gt;What have I been working on today?&lt;/s&gt; &lt;a class=&quot;direct-link&quot; href=&quot;https://tnt-dev.toolforge.org/posts/2022/Hello%20World/#what-have-i-been-working-on-today&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I was going to frame these posts as &amp;quot;&lt;em&gt;What have I been working on today?&lt;/em&gt;&amp;quot;, but as a &lt;a href=&quot;https://en.wiktionary.org/wiki/night_owl#Noun&quot;&gt;night owl&lt;/a&gt; &amp;quot;today&amp;quot;  often means &amp;quot;&lt;em&gt;some of yesterday, some of today&lt;/em&gt;&amp;quot; — I think it&#39;s better to frame it as &amp;quot;&lt;em&gt;What have I been working on recently?&lt;/em&gt;&amp;quot; just so I don&#39;t need to figure out days...&lt;/p&gt;
+&lt;h2 id=&quot;what-have-i-been-working-on-recently&quot; tabindex=&quot;-1&quot;&gt;What have I been working on recently? &lt;a class=&quot;direct-link&quot; href=&quot;https://tnt-dev.toolforge.org/posts/2022/Hello%20World/#what-have-i-been-working-on-recently&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;ipavalidator&quot; tabindex=&quot;-1&quot;&gt;IPAValidator &lt;a class=&quot;direct-link&quot; href=&quot;https://tnt-dev.toolforge.org/posts/2022/Hello%20World/#ipavalidator&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As part of an &lt;a href=&quot;https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Generate_Audio_for_IPA&quot;&gt;accepted Community Wishlist item&lt;/a&gt;, I built a PHP composer library to validate and normalise &lt;a href=&quot;https://en.wikipedia.org/wiki/International_Phonetic_Alphabet&quot;&gt;IPA&lt;/a&gt; — initially this repo was on my personal GitHub account, but it was suggested during security review that it would be better to move it to &lt;code&gt;mediawiki/libs&lt;/code&gt; on Gerrit.&lt;/p&gt;
+&lt;p&gt;This move left some tidying up to do, which would contribute towards stalling further development, so my attention has primarily been on that — pretty cool that I wrote a library that&#39;s now being used by the MediaWiki proper!&lt;/p&gt;
+&lt;p&gt;Go check out &lt;a href=&quot;https://gerrit.wikimedia.org/g/mediawiki/libs/IPAValidator&quot;&gt;https://gerrit.wikimedia.org/g/mediawiki/libs/IPAValidator&lt;/a&gt; (and please &lt;em&gt;please&lt;/em&gt; improve &lt;a href=&quot;https://regex101.com/r/f2Qhuk&quot;&gt;the regex&lt;/a&gt;...)&lt;/p&gt;
+&lt;pre class=&quot;language-regex&quot;&gt;&lt;code class=&quot;language-regex&quot;&gt;&lt;span class=&quot;token anchor function&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token char-class&quot;&gt;&lt;span class=&quot;token char-class-punctuation punctuation&quot;&gt;[&lt;/span&gt;().&lt;span class=&quot;token range&quot;&gt;a&lt;span class=&quot;token range-punctuation operator&quot;&gt;-&lt;/span&gt;z&lt;/span&gt;|æçðøħŋœ&lt;span class=&quot;token range&quot;&gt;ǀ&lt;span class=&quot;token range-punctuation operator&quot;&gt;-&lt;/span&gt;ǃ&lt;/span&gt;&lt;span class=&quot;token range&quot;&gt;ɐ&lt;span class=&quot;token range-punctuation operator&quot;&gt;-&lt;/span&gt;ɻ&lt;/span&gt;ɽɾ&lt;span class=&quot;token range&quot;&gt;ʀ&lt;span class=&quot;token range-punctuation operator&quot;&gt;-&lt;/span&gt;ʄ&lt;/span&gt;&lt;span class=&quot;token range&quot;&gt;ʈ&lt;span class=&quot;token range-punctuation operator&quot;&gt;-&lt;/span&gt;ʒ&lt;/span&gt;ʔʕʘʙ&lt;span class=&quot;token range&quot;&gt;ʛ&lt;span class=&quot;token range-punctuation operator&quot;&gt;-&lt;/span&gt;ʝ&lt;/span&gt;ʟʡʢʰʲʷʼˀˈˌːˑ˞ˠˡ&lt;span class=&quot;token range&quot;&gt;ˤ&lt;span class=&quot;token range-punctuation operator&quot;&gt;-&lt;/span&gt;˩&lt;/span&gt;̴̘̙̜̝̞̟̠̤̥̩̪̬̯̰̹̺̻̼̀́̂̃̄̆̈̊̋̌̏̽̚͜͡βθχ᷄᷅᷈‖‿ⁿⱱ&lt;span class=&quot;token char-class-punctuation punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token quantifier number&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token anchor function&quot;&gt;$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+</feed>
