@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/theresnotime
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tnt-dev.toolforge.org
+  * I am theresnotime (https://keybase.io/theresnotime) on keybase.
+  * I have a public key with fingerprint 82C9 5A59 064B 3153 613D  24DE 875D A811 28C6 4BD0
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204bc4e5b122ad1f7c192fe77906dd5d1f2594de62cfe37aa9dc563e35e63eafd40a",
+      "fingerprint": "82c95a59064b3153613d24de875da81128c64bd0",
+      "host": "keybase.io",
+      "key_id": "875da81128c64bd0",
+      "kid": "0101022a01877213afec2fca851288376b3fae5feba9aa57bf47a9ccfcd39f47ced50a",
+      "uid": "42299891b52c86574af6b3a1d6cb2919",
+      "username": "theresnotime"
+    },
+    "service": {
+      "hostname": "tnt-dev.toolforge.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1669184864,
+  "expire_in": 157680000,
+  "prev": "8396e5f2c25bbee0a6de2fc710e651c6f6d6453900b83164adbb6d9b6978df60",
+  "seqno": 88,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMLzAnicbZJtTBxFHMYP5Gh5q8UW0lZF2RDaygH7Ort7QqJ9SWNrNNQYqfFyzM7M
+HuvR22N37+hBMLa5ahGiKKEFSWskov0Chmiv2JTYWloVWjViNE2ura+1H1pFq0kT
+A+fsRb45k8zuzDz/3zzzZGZK7vIU5rwcOF666cKur3Lmzo7FPKh7uqWL0UycYPxd
+TJhkP6QNE9sJhg3M+BmW41lRQyKRNI7nIeZ0GXEqrxNZVlmAsURXeEkVMQE80okg
+Q6hiJAGBCBKhI9SxyELGx+hGJESsqGVEHIpVeKRKUKIIURM4SQCcgHkKUWQJQ4Xj
+eAXRHczSwlbTdiuoOQ3apM4w6RqdBLP2/ke/7Jt2apjlFFnmOQHqBPE6gopEtYog
+A03QIZF0okEVQknWdFGGKkI6woJK/xHBUtZ3LIsTeV5VFZXTJB4pQJJFqFMC5DBA
+Gq9yqiu0iRWBewlVO63EInbEdAw67fYxdCduIOKG695mWRVxajGJ1zmm2aabVojU
+0YGCopbpmMhso5JWx4nafhfhJKJuTQfRgv/RgpoRwTRUWhEnlm2YEcbPUSXKnurn
+AFA5RVSA6GPIvqhhkaDhKiQZKCxt7jkk7kYoqIAGwSNe0jRCWAgwoUnJHEuAxCGg
+AwxESVBZVlMEDogQaxrAqgZUWcE6cCO3SXvEZPyKQn3CEGXaRigCnZhFb//JmXSe
+J6fQk+/NdV+bp7Bg9fIbfKy72NM7P9cQPnHt0Ucqtzze2HG+oqFijbd8zal3xd4b
+xw9evXDooW0r7rP1nw6/+sdnnZOXR/27qyuMssr3OxaGiNU8krm0/8Z36ev+5oID
+NceePLLUdGnD72s/6u3vKTu3f9PH6zvXZgKkN/Xp1L5bO385lcnPXdg6W9ZTnVu5
+pz92dea9y0IKPPDzwEtvTWROZgYejg8V5sxtrnlx4MT09192hkbHro3WNVypn62e
+v1MynM5L7Rl7fny87+2FGv6vpi5voOiJW0WL2kRB39Lr549MFm0OHx3e2PjNcNW3
+IyuTjT82f/1b++Ers+FnzEPrVs2lEiuDT8EdmXuYD70BtmIwdvJ2fzLxQeqdo2fl
+g576yp03G0+z47UbJg48mGzll67f7Tz3bHLb7Zm9d/qrSxebq3oujqQDRqi4PPXP
+UGJ7rXcwr0otf1Pb/vfq1/5sL/ZNo5aWe4Wn+Y3R/LQ9X7r7hXNndqzHvuS6z0dL
+Gr5YVS/evFiQHM+UL255ZeqNX38Y7JvauuL+Ju9MevL0vwuvf/0=
+=W1TQ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/theresnotime
+
+==================================================================
