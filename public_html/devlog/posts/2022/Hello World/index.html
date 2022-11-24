@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
-    <meta name="description" content="Hiiiiii.">
+    <meta name="description" content="It&#39;s a start — I&#39;m going to try to write a blog post every week, wish me luck..">
     <link rel="stylesheet" href="/devlog/css/index.css">
     <link rel="stylesheet" href="/devlog/css/prism-base16-monokai.dark.css">
     <link rel="alternate" href="/devlog/feed/feed.xml" type="application/atom+xml" title="TheresNoTime&#39;s Devlog">
@@ -23,14 +23,15 @@
     <main  class="tmpl-post">
       <h1>Hello World</h1>
 
-<time datetime="2022-11-23">23 Nov 2022</time>
+<time datetime="2022-11-23">23 Nov 2022</time><a href="/devlog/tags/meta/" class="post-tag animated-rainbow-hover">Meta</a><a href="/devlog/tags/phonos/" class="post-tag animated-rainbow-hover">Phonos</a>
 
 <p>In the spirit of trying to increase transparency into what Wikimedia Foundation software engineers get up to on a daily basis (or at least, what <a href="https://meta.wikimedia.org/wiki/User:TheresNoTime-WMF">a single member</a> of the <a href="https://meta.wikimedia.org/wiki/Community_Tech">Community Tech team</a> gets up to!), I'm going to try to write a blog post every week.</p>
-<p>I'm not sure how long I'll be able to keep this up, as normally any sort of blog project falls flat on its face after about a month, but I'm going to give it a go! I'm going to let my team know as a bit of accountability.</p>
+<p>I'm not sure how long I'll be able to keep this up, as normally any sort of blog project I try to start falls flat on its face after about a month, but I suppose we'll see!
+I'm going to let my team know as a bit of accountability.</p>
 <h2 id="eleventy-what" tabindex="-1">Eleventy—<em>what?</em> <a class="direct-link" href="#eleventy-what" aria-hidden="true">#</a></h2>
-<p>A nice interesting (side)topic for this blog is going to be the fact that it's going to be built using <a href="https://www.11ty.dev/">Eleventy</a>, a static site generator. Normally I'd use something like <a href="https://gohugo.io/">Hugo</a> or <a href="https://jekyllrb.com/">Jekyll</a> for this sort of thing, but I've been wanting to try out Eleventy for a while now, and this seems like a good opportunity to do so — plus learning a whole new tool is <em>always fun!</em></p>
+<p>A nice interesting (side)topic for this blog is going to be the fact that it's built using <a href="https://www.11ty.dev/">Eleventy</a>, a static site generator I've not used before. Normally I'd use something like <a href="https://gohugo.io/">Hugo</a> or <a href="https://jekyllrb.com/">Jekyll</a> for this sort of thing, but this seems like a good opportunity to learn something new.</p>
 <h2 id="what-have-i-been-working-on-today" tabindex="-1"><s>What have I been working on today?</s> <a class="direct-link" href="#what-have-i-been-working-on-today" aria-hidden="true">#</a></h2>
-<p>I was going to frame these posts as &quot;<em>What have I been working on today?</em>&quot;, but as a <a href="https://en.wiktionary.org/wiki/night_owl#Noun">night owl</a> &quot;today&quot;  often means &quot;<em>some of yesterday, some of today</em>&quot; — I think it's better to frame it as &quot;<em>What have I been working on recently?</em>&quot; just so I don't need to figure out days...</p>
+<p>I was going to frame these posts as &quot;<em>What have I been working on today?</em>&quot;, but as a <a href="https://en.wiktionary.org/wiki/night_owl#Noun">night owl</a> &quot;today&quot;  often means &quot;<em>some of yesterday, and a bit of today</em>&quot; — I think it'll be easier to frame it as &quot;<em>What have I been working on recently?</em>&quot; (if only because <em>then</em> I don't need to figure out what day it is).</p>
 <h2 id="what-have-i-been-working-on-recently" tabindex="-1">What have I been working on recently? <a class="direct-link" href="#what-have-i-been-working-on-recently" aria-hidden="true">#</a></h2>
 <h3 id="ipavalidator" tabindex="-1">IPAValidator <a class="direct-link" href="#ipavalidator" aria-hidden="true">#</a></h3>
 <p>As part of an <a href="https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Generate_Audio_for_IPA">accepted Community Wishlist item</a>, I built a PHP composer library to validate and normalise <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a> — initially this repo was on my personal GitHub account, but it was suggested during security review that it would be better to move it to <code>mediawiki/libs</code> on Gerrit.</p>
