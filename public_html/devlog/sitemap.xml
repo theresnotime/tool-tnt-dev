@@ -25,4 +25,9 @@
     <loc>https://tnt-dev.toolforge.org/devlog/tags/</loc>
     <lastmod>2022-11-23</lastmod>
   </url>
+  
+  <url>
+    <loc>https://tnt-dev.toolforge.org/devlog/about/</loc>
+    <lastmod>2022-11-24</lastmod>
+  </url>
 </urlset>
