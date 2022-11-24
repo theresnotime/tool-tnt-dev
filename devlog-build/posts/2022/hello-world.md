@@ -1,6 +1,6 @@
 ---
 title: Hello World
-description: It's a start — I'm going to try to write a blog post every week, wish me luck..
+description: In the spirit of trying to increase transparency into what we do, I'm going to try to write an insightful blog post every week! Wish me luck..
 date: 2022-11-23
 layout: layouts/post.njk
 tags:
