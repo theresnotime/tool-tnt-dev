@@ -23,9 +23,9 @@ I was going to frame these posts as "*What have I been working on today?*", but 
 ### IPAValidator
 As part of an [accepted Community Wishlist item](https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Generate_Audio_for_IPA), I built a PHP composer library to validate and normalise [IPA](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) — initially this repo was on my personal GitHub account, but it was suggested during security review that it would be better to move it to `mediawiki/libs` on Gerrit.
 
-This move left some tidying up to do, which would contribute towards stalling further development, so my attention has primarily been on that — pretty cool that I wrote a library that's now being used by the MediaWiki proper!
+This move left some tidying up to do, which would contribute towards stalling further development, so my attention has primarily been on that — pretty cool that I wrote a library that's now being used by MediaWiki proper!
 
-Go check out https://gerrit.wikimedia.org/g/mediawiki/libs/IPAValidator (and please *please* improve [the regex](https://regex101.com/r/f2Qhuk)...)
+Go check out https://gerrit.wikimedia.org/g/mediawiki/libs/IPAValidator, and please *please* improve [the regex](https://regex101.com/r/f2Qhuk) if you can.
 
 ```regex
 ^[().a-z|æçðøħŋœǀ-ǃɐ-ɻɽɾʀ-ʄʈ-ʒʔʕʘʙʛ-ʝʟʡʢʰʲʷʼˀˈˌːˑ˞ˠˡˤ-˩̴̘̙̜̝̞̟̠̤̥̩̪̬̯̰̹̺̻̼̀́̂̃̄̆̈̊̋̌̏̽̚͜͡βθχ᷄᷅᷈‖‿ⁿⱱ]+$
