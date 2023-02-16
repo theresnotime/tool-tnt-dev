@@ -48,6 +48,13 @@
             "dir": "static/audio/mespeak",
             "ext": "wav",
             "status": 1
+        },
+        "mimic3": {
+            "name": "mimic3",
+            "link": "https://meta.wikimedia.org/wiki/Community_Wishlist_Survey_2022/Reading/IPA_audio_renderer/TTS_investigation#phoneme-synthesis_+_meSpeak.js",
+            "dir": "static/audio/mimic3",
+            "ext": "wav",
+            "status": 1
         }
     },
     "corpus": {
